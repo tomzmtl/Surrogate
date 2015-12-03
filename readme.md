@@ -6,17 +6,17 @@ Surrogate is an API that delivers random dummy content to web applications.
 
 ### Images
 
-#### img/src
+#### api/img/src
 
 Random image URL.
 
-#### img/tag (todo)
+#### api/img/tag (todo)
 
 HTML code of a random image.
 
 ### Paragraphs
 
-#### lorem/{N} (todo)
+#### api/lorem/{N} (todo)
 
 N paragraphs of dummy text.
 
