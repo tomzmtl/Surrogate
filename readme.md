@@ -16,7 +16,7 @@ HTML code of a random image.
 
 ### Paragraphs
 
-### p/{N}
+#### lorem/{N}
 
 N paragraphs of dummy text.
 
