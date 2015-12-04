@@ -16,6 +16,18 @@ class ApiController extends Controller
         return response( $this->rsg->getImageUrl(), 200 );
     }
 
+    public function lorem ( $count = 1 )
+    {
+        $output = '';
+
+        for ( $i = 0 ; $i < $count ; $i++ )
+        {
+            $output .= $this->rsg->getParagraph();
+        }
+
+        return response( $output, 200 );
+    }
+
     // Custom content
     //
     // Support JHTML

@@ -16,4 +16,9 @@ class RandomStuffGenerator
 
         return $fileUrl;
     }
+
+    public function getParagraph ()
+    {
+        return '<p>'.RandomStuffHelper::getLoremContent().'</p>';
+    }
 }

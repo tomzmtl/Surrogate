@@ -27,6 +27,6 @@ $app->group(
 {
     $app->get( 'img/src',   'ApiController@imgSrc' );
     //$app->get( 'img/tag', 'ApiController@lorem' );
-    //$app->get( 'img/lorem/{count}', 'ApiController@lorem' );
+    $app->get( 'lorem/{count}', 'ApiController@lorem' );
 
 });
