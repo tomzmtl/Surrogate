@@ -26,7 +26,7 @@ TBD
 
 ## Stack
 
-### Lumen PHP Framework [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
+* [Lumen PHP Framework](http://lumen.laravel.com/) [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 
 ## License
 
