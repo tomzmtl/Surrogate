@@ -19,6 +19,22 @@ class RandomStuffGenerator
 
     public function getParagraph ()
     {
-        return '<p>'.RandomStuffHelper::getLoremContent().'</p>';
+        return '<p>'.$this->getLoremContent().'</p>';
+    }
+
+    private function getLoremContent ( $base = 40, $variation = 10 )
+    {
+        $ipsum = ['ad','adipiscing','aliqua','aliquip','amet','anim','aute','cillum','commodo','consectetur','consequat','culpa','cupidatat','deserunt','do','dolor','dolor','dolore','dolore','duis','ea','eiusmod','elit','enim','esse','est','et','eu','ex','excepteur','exercitation','fugiat','id','in','in','in','incididunt','ipsum','irure','labore','laboris','laborum','lorem','magna','minim','mollit','nisi','non','nostrud','nulla','occaecat','officia','pariatur','proident','qui','quis','reprehenderit','sed','sint','sit','sunt','tempor','ullamco','ut','ut','ut','velit','veniam','voluptate'];
+
+        shuffle($ipsum);
+
+        $count = $base + ( rand(0,$variation) * rand(0,1) ? 1 : -1 );
+        $words = array_slice( $ipsum, 0, $count );
+
+        $words[0] = ucfirst($words[0]);
+
+        $p = implode( ' ', $words ) . '.';
+
+        return $p;
     }
 }
