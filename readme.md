@@ -16,7 +16,7 @@ HTML code of a random image.
 
 ### Paragraphs
 
-#### api/lorem/{N} (todo)
+#### api/lorem/{N}
 
 N paragraphs of dummy text.
 
