@@ -16,6 +16,13 @@ class ApiController extends Controller
         return response( $this->rsg->getImageUrl(), 200 );
     }
 
+    public function imgTag ()
+    {
+        $url = $this->rsg->getImageUrl();
+
+        return view('img.tag')->with(compact('url'));
+    }
+
     public function lorem ( $count = 1 )
     {
         $output = '';
