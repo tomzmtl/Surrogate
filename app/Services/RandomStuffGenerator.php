@@ -19,7 +19,7 @@ class RandomStuffGenerator
 
     public function getParagraph ()
     {
-        return '<p>'.$this->getLoremContent().'</p>';
+        return $this->getLoremContent();
     }
 
     private function getLoremContent ( $base = 40, $variation = 10 )

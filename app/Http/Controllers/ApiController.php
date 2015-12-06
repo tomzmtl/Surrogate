@@ -25,14 +25,14 @@ class ApiController extends Controller
 
     public function lorem ( $count = 1 )
     {
-        $output = '';
+        $p = [];
 
         for ( $i = 0 ; $i < $count ; $i++ )
         {
-            $output .= $this->rsg->getParagraph();
+            $p[] = $this->rsg->getParagraph();
         }
 
-        return response( $output, 200 );
+        return view('lorem.n')->with(compact('p'));
     }
 
     // Custom content
