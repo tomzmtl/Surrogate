@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #F9F6F9;
+  margin: 0;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Raleway'; }
+
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  margin-right: 8%;
+  background: #DD5533;
+  border-right: 3vw solid #993300; }
+  header h1 {
+    margin: 0; }
+
+.header-logo,
+.header-nav {
+  color: #222; }
+
+.header-logo {
+  padding: 0 30px 30px 30px;
+  z-index: 100; }
+
+#header-nav {
+  z-index: 50;
+  background: #DD5533; }
+  #header-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+  #header-nav li {
+    position: relative; }
+    #header-nav li::after {
+      content: '';
+      display: block;
+      width: 3vw;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #DD5533;
+      border-right: 3vw solid #993300;
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+      transition: 160ms transform ease-out; }
+    #header-nav li:hover::after {
+      -webkit-transform: translateX(60%);
+      transform: translateX(60%); }
+  #header-nav a {
+    display: block;
+    padding: 7px 0 7px 30px;
+    color: white;
+    font-family: Monaco, monospace;
+    font-size: 12px;
+    text-decoration: none; }
+    #header-nav a:hover {
+      background: #CC4422; }
+
+main {
+  width: 50%;
+  margin: auto;
+  color: #666; }
+  main p {
+    margin: 0; }
+  main p + p {
+    margin-top: 10px; }
+  main a {
+    color: #CCC;
+    text-decoration: none;
+    transition: 300ms; }
+  main a:hover {
+    color: #999; }
+
+.tagline {
+  display: block;
+  font-size: 18px;
+  font-weight: bold; }
+
+#response {
+  margin-top: 10%;
+  padding: 40px;
+  border-radius: 2px;
+  background: #F3F0F3; }
+  #response img {
+    width: 100%;
+    height: auto; }
+
+footer {
+  margin-top: 300px; }
+  footer small {
+    margin-top: 50px;
+    font-size: 0.7em; }
+  footer a {
+    color: #AAA;
+    text-decoration: none; }
