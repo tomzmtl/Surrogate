@@ -21,11 +21,12 @@ header
     height: 100vh;
     margin-right: 8%;
     background: $header-color;
-    border-right: 1vw solid #993300;
+    border-right: 4px solid #993300;
 
     h1
     {
         margin: 0;
+        color: #660000;
     }
 }
 
@@ -61,11 +62,6 @@ header
         font-family: Monaco, monospace;
         font-size: 12px;
         text-decoration: none;
-
-        &.active
-        {
-            background: url(../img/arrow-right.svg);
-        }
 
         &:hover
         {

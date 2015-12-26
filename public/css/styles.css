@@ -26,9 +26,10 @@ header {
   height: 100vh;
   margin-right: 8%;
   background: #DD5533;
-  border-right: 1vw solid #993300; }
+  border-right: 4px solid #993300; }
   header h1 {
-    margin: 0; }
+    margin: 0;
+    color: #660000; }
 
 .header-logo,
 .header-nav {
@@ -52,8 +53,6 @@ header {
     font-family: Monaco, monospace;
     font-size: 12px;
     text-decoration: none; }
-    #header-nav a.active {
-      background: url(../img/arrow-right.svg); }
     #header-nav a:hover {
       background: #CC4422; }
 
