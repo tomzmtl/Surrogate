@@ -26,7 +26,7 @@ header {
   height: 100vh;
   margin-right: 8%;
   background: #DD5533;
-  border-right: 3vw solid #993300; }
+  border-right: 1vw solid #993300; }
   header h1 {
     margin: 0; }
 
@@ -45,24 +45,6 @@ header {
     padding: 0;
     margin: 0;
     list-style-type: none; }
-  #header-nav li {
-    position: relative; }
-    #header-nav li::after {
-      content: '';
-      display: block;
-      width: 3vw;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: #DD5533;
-      border-right: 3vw solid #993300;
-      -webkit-transform: translateX(50%);
-      transform: translateX(50%);
-      transition: 160ms transform ease-out; }
-    #header-nav li:hover::after {
-      -webkit-transform: translateX(60%);
-      transform: translateX(60%); }
   #header-nav a {
     display: block;
     padding: 7px 0 7px 30px;
@@ -70,6 +52,8 @@ header {
     font-family: Monaco, monospace;
     font-size: 12px;
     text-decoration: none; }
+    #header-nav a.active {
+      background: url(../img/arrow-right.svg); }
     #header-nav a:hover {
       background: #CC4422; }
 

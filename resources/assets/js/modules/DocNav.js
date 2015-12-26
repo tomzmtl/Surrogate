@@ -13,7 +13,7 @@ var DocNav = (function()
     function construct ()
     {
         container = document.getElementById('header-nav');
-        links = container.querySelectorAll('li > a');
+        links = container.querySelectorAll ('li > a');
         responseContainer = document.getElementById('response');
 
         for ( var i = 0 ; i < links.length ; i++ )
@@ -27,6 +27,10 @@ var DocNav = (function()
     function onLinkClick (e)
     {
         e.preventDefault();
+
+        links.querySelector('.active').classList.remove('active');
+        console.log(links);
+        e.target.classList.add('active');
 
         var method = e.target.dataset.method,
             url = e.target.href,
@@ -51,7 +55,7 @@ var DocNav = (function()
             }
         }
 
-        request.then( onRequestDone )
+        request.then( onRequestDone );
     }
 
     var api = { init : init };
